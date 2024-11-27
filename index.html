@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes Apps</title>
+  </head>
+  <body>
+    <header>
+      <nav-bar></nav-bar>
+    </header>
+
+    <div class="box-container">
+      <div class="box green" data-speed="0.25">N</div>
+      <div class="box purple" data-speed="0.4">O</div>
+      <div class="box orange" data-speed="0">T</div>
+      <div class="box red" data-speed="1">E</div>
+      <div class="box blue" data-speed="0.75">S</div>
+    </div>
+
+    <main>
+      <nav>
+        <button id="activeNotesButton" class="nav-button">Active Notes</button>
+        <button id="archivedNotesButton" class="nav-button">
+          Archived Notes
+        </button>
+      </nav>
+
+      <add-note-form></add-note-form>
+
+      <section id="activeNotesSection" class="animated-section">
+        <h2>Active Notes</h2>
+        <div id="notesList" class="list"></div>
+      </section>
+
+      <section
+        id="archivedNotesSection"
+        class="animated-section"
+        style="display: none"
+      >
+        <h2>Archived Notes</h2>
+        <div id="archivedNotesList" class="list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <footer-bar></footer-bar>
+    </footer>
+  </body>
+</html>
